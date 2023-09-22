@@ -16,9 +16,9 @@ ou em hexadecimal. Pode ser utilizado como gerenciador de arquivo (copiar, mover
   1. [Interface](#interface)
   1. [Buttons](#buttons)
   1. [Browse SD Card / Browse USB0 Drive](#browse-sd-card--browse-usb0-drive)
-  1. [Install title from DBIbackend](#install-title-from-dbibackend)
+  1. [Instalar título com o DBIbackend](#install-title-from-dbibackend)
   1. [Home server](#home-server)
-  1. [Browse installed applications](#browse-installed-applications)
+  1. [Navegar pelas aplicações instaladas](#browse-installed-applications)
      * [Titles Context menu](#title-context-menu)
      * [Detailed game menu](#detailed-game-menu)
       * [Content records](#content-records)
@@ -31,7 +31,7 @@ ou em hexadecimal. Pode ser utilizado como gerenciador de arquivo (copiar, mover
   1. [Browse saves](#browse-saves)
       * [Context menu Installed and Uninstalled](#context-menu-installed-and-uninstalled)
       * [Backups context menu](#backups-context-menu)
-  1. [Run MTP responder](#run-mtp-responder)
+  1. [Executar o MTP responder](#run-mtp-responder)
   1. [Activity Log](#activity-log)
     * [Applications](#applications)
     * [Activity](#activity)
@@ -77,34 +77,34 @@ Copie o `dbi.nro` e o `dbi.config` para o seu cartão SD em `sdmc:/switch/DBI/`.
 ![2021041010520200](https://user-images.githubusercontent.com/18294541/114262830-d7643e00-99ea-11eb-8dbb-c8e0996577e5.jpg)
 * **Browse SD Card** —  instalação de arquivos `NSP`/`NSZ`/`XCI`/`XCZ` a partir do cartão de memória.
 * **Browse USB0 Drive** — instalação de arquivos `NSP`/`NSZ`/`XCI`/`XCZ` de um divre USB externo em exFAT/FAT32, como um pendrive ou hd externo, etc.
-* **Install title from DBIbackend** instalação de arquivos NSP/NSZ/XCI/XCZ  através do PC por um cabo USB 2.0 ou 3.0rom a PC via USB 2.0 or 3.0 cable usando o programa dbibackend. O *Hotkey* para essa opção é o: botão **(Y)**.
+* **Install title from DBIbackend** instalação de arquivos NSP/NSZ/XCI/XCZ  através do PC por um cabo USB 2.0 ou 3.0rom a PC via USB 2.0 or 3.0 cable usando o programa dbibackend. O *Hotkey* para essa opção é: botão **(Y)**.
 * **Install title from Gamecard** — essa opção aparece quando um cartão de jogo é inserido no Switch permitindo a instalação do jogo a partir do cartão diretamente no cartão SD do console ou memória NAND interna.
 * **Home server** — começando na versão v150, é possível instalar jogos pela rede (HTTP) via WiFi ou usando um adaptador LAN-USB. Mais detalhes podem ser vistos abaixo.
 * **Browse installed applications** — permite visualizar os jogos instalados, o número total de jogos, tempo gasto em cada jogo, o número de vezes que foi executado, verificar erros, transferir o jogo da memória interna para o cartão SD e vice-versa, selecionar ou apagar os jogos e seus mods em LayeredFS, ver a persença de atualizações e DLC's, manualmente remover DLC/atualizações/LayeredFS (LFS) e usar a função para zerar a requisição de uma versão específica pelo sistema para um determinado jogo. A *Hotkey* para essa opção é: botão **(L)**.
 * **Cleanup orphaned files** — remove automaticamente quaisquer arquivos não necessários de um jogo apagado, se houver algum.
 * **Browse tickets** — visualiza e apaga manualmente tickets de jogos do sistema (use com cautela).
 * **Browse saves** - visualiza, salva e apaga saves de jogos.
-* **Run MTP responder** — executa um servidor interno de MTP que permite o Switch se conectar ao PC ou dispositivo Android (phone/tablet/etc., tested with Pixel 3, Xiaomi Mi A1, Lenovo Tab 4 7" TB-7304X), onde você pode visualizar e interagir com o cartão de memória 1: SD Card) a memória interna do sistema e visualizar os jogos instalados (4: Installed games), realizar o backup dos saves para o PC (7: Saves), e realizar o dump de um cartão de jogo (completo/trimmed/certificado) para o PC/Android com um cartão inserido no sistema (9: Gamecard). O *Hotkey* para essa opção é o: botão **(X)**.
+* **Run MTP responder** — executa um servidor interno de MTP que permite o Switch se conectar ao PC ou dispositivo Android (phone/tablet/etc., tested with Pixel 3, Xiaomi Mi A1, Lenovo Tab 4 7" TB-7304X), onde você pode visualizar e interagir com o cartão de memória 1: SD Card) a memória interna do sistema e visualizar os jogos instalados (4: Installed games), realizar o backup dos saves para o PC (7: Saves), e realizar o dump de um cartão de jogo (completo/trimmed/certificado) para o PC/Android com um cartão inserido no sistema (9: Gamecard). O *Hotkey* para essa opção é: botão **(X)**.
 * **Run FTP server** - habilita o servidor FTP no DBI para acessar os arquivos pela porta 5000 ou instalar arquivos pela porta 6000.
-* **Exit** — sai do programa. A *Hotkey* para essa opção é o: botão **(+)**.
+* **Exit** — sai do programa. A *Hotkey* para essa opção é: botão **(+)**.
 
 O canto inferior esquerdo do DBI mostra o total de dados no cartão SD atual em relação a sua capacidade total. O canto inferior direito da informações sobre seu espaço utilizado pela NAND no HOS.
 
 No centro inferior (dbi: XXX) mostra o número da versão do DBI - você deve sempre estar utilizando a última versão.
 
 
-### Buttons
+### Butões
 
-* **(А)** - select or confirm
-* **(B)** - cancel, exits the program **from the main menu**
-* **(X)** - select file. On the main screen - hotkey for mounting MTP (menu item "[Run MTP responder](#run-mtp-responder)")
-* **(Y)** - invert selection, select all if nothing is selected. On the main screen - installation via USB using dbibackend (menu item "[Install title from DBIbackend](#install-title-from-dbibackend)")
-* **(ZL)** and **(ZR)** - scroll pages in menus, scroll through individual games when in detailed game menu
-* **(L)** - **on the main menu** the hotkey for the menu option "**Browse installed applications**"
-* **(R)** - change the displayed sort order of files/titles
-* **(L3)** - click left stick to launch games from the application list or detailed game menu
-* **(+)** on the right joycon - display context menus to allow you to perform operations such as deleting, resetting the required firmware version, mounting via MTP and more
-* **(-)** on the left joycon - turn the screen on/off when MTP mode is activated/when installing titles
+* **(А)** - selecionar ou confirmar
+* **(B)** - cancelar, sair do programa **para o menu principal**
+* **(X)** - selecionar arquivo. Na tela principal - hotkey para montar usando MTP (item do menu "[Executar o MTP responder](#run-mtp-responder)")
+* **(Y)** - inverter seleção, selecionar todos se nada estiver selecionado. Na tela inicial - instalação via USB usando o dbibackend (item do menu "[Instalar título com o DBIbackend](#install-title-from-dbibackend)")
+* **(ZL)** e **(ZR)** - navegar pelas páginas nos menus, passear por jogos individuais nos menus detalhados dos jogos
+* **(L)** - **na tela inicial** a hotkey para a opção "**Navegar pelas aplicações instaladas**"
+* **(R)** - muda a ordenação que os arquivos/títulos são mostrados
+* **(L3)** - clique com o direcional esquerdo para executar um jogo da lista de aplicações ou menu detalhado de um jogo
+* **(+)** no joycon direito - mostra o menu de contexto e permite que você realize diversas operações como apagar, resetar a versão de firmware requerido, montar via MTP e mais
+* **(-)** no joycon esquerdo - alterna entre on/off a opção de desligar a tela quando estiver com o modo MTP ativo quando estiver instalando jogos
 
 ### Browse SD Card / Browse USB0 Drive
 
