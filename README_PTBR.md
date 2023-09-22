@@ -11,8 +11,8 @@ ou em hexadecimal. Pode ser utilizado como gerenciador de arquivo (copiar, mover
 
 ## Content: 
 
-1. [Instalação](#installation)
-1. [Uso](#usage)
+1. [Instalação](#instalação)
+1. [Uso](#uso)
   1. [Interface](#interface)
   1. [Botões](#buttons)
   1. [Navegar no Cartão SD / Drive USB0](#browse-sd-card--browse-usb0-drive)
@@ -71,7 +71,7 @@ Copie o `dbi.nro` e o `dbi.config` para o seu cartão SD em `sdmc:/switch/DBI/`.
 
 *Se você conseguir iniciar o DBI em applet mode você verá que o fundo da tela ficará em azul, enquanto que iniciar no mode de sobreposição de título ficará em preto.*
 
-## Usage 
+## Uso 
 
 ### Interface
 ![2021041010520200](https://user-images.githubusercontent.com/18294541/114262830-d7643e00-99ea-11eb-8dbb-c8e0996577e5.jpg)
